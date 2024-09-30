@@ -1,5 +1,5 @@
 export const metadata = {
-    title: 'Hash Machinery Systems',
+    title: 'UCanPay AMS',
     description: 'We provide high quality manufacturing services.',
 }
 

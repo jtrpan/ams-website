@@ -76,9 +76,9 @@ export default function Clients() {
                     {/* Page header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                         <h1 className="h1 mb-4" data-aos="fade-up">Clients</h1>
-                        <p className="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">Experience speaks
-                            volumes. As trusted partners to industry giants, our commitment to quality resonates. See
-                            for yourself the esteemed brands that trust in Hash Machinery Systems.</p>
+                        <p className="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">
+                            [description]
+                        </p>
                     </div>
                     {/* Logo Cluster */}
                     <div className="logo-cloud" data-aos="fade-up" data-aos-delay="400">

@@ -76,7 +76,7 @@ export default function LogoCloud() {
                         <h2 className="h2 mb-4">Don't take our word for it</h2>
                         <p className="text-xl text-gray-400">Experience speaks volumes. As trusted partners to industry
                             giants, our commitment to quality resonates. See for yourself the esteemed brands that trust
-                            in Hash Machinery Systems.</p>
+                            in UCanPay AMS.</p>
                     </div>
 
                     {/* Logo Cluster */}
@@ -191,4 +191,3 @@ export default function LogoCloud() {
         </section>
     )
 }
-

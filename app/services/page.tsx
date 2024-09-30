@@ -1,6 +1,6 @@
 export const metadata = {
-    title: 'Services',
-    description: 'Services page.',
+    title: 'title',
+    description: 'description',
 }
 
 import Link from 'next/link';
@@ -18,12 +18,7 @@ export default function Services() {
                     {/* Page header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                         <h1 className="h1 mb-4" data-aos="fade-up">Services</h1>
-                        <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Our company
-                            excels in manufacturing, ensuring clients receive unparalleled quality and efficiency. We've
-                            segmented our operations into five specialized units to address diverse manufacturing needs:
-                            assembly, die casting, precision machining, injection molding, and stamping. Each unit is
-                            committed to innovation and client satisfaction, establishing us as a trusted manufacturing
-                            partner.</p>
+                        <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">[description]</p>
                     </div>
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16" data-aos="fade-up"
                          data-aos-delay="400">
@@ -31,25 +26,25 @@ export default function Services() {
                             <div className="image-button">
                                 <img src="/images/image_buttons/die_casting.jpg" alt="Die Casting"/>
                                 <div className="overlay-text">
-                                    <Link href="services/diecasting">Die Casting Services</Link>
+                                    <Link href="services/diecasting">[placeholder]</Link>
                                 </div>
                             </div>
                             <div className="image-button">
                                 <img src="/images/image_buttons/machining.jpg" alt="Die Casting"/>
                                 <div className="overlay-text">
-                                    <Link href="services/machining">Machining Services</Link>
+                                    <Link href="services/machining">[placeholder]</Link>
                                 </div>
                             </div>
                             <div className="image-button">
                                 <img src="/images/image_buttons/plastic_mold.jpg" alt="Die Casting"/>
                                 <div className="overlay-text">
-                                    <Link href="services/plastic_molding">Plastic Molding Services</Link>
+                                    <Link href="services/plastic_molding">[placeholder]</Link>
                                 </div>
                             </div>
                             <div className="image-button">
                                 <img src="/images/image_buttons/stamping.jpg" alt="Die Casting"/>
                                 <div className="overlay-text">
-                                    <Link href="services/stamping">Stamping Services</Link>
+                                    <Link href="services/stamping">[placeholder]</Link>
                                 </div>
                             </div>
                         </div>

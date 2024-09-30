@@ -6,11 +6,8 @@ export default function Features() {
 
                     {/* Section header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                        <h2 className="h2 mb-4">Services</h2>
-                        <p className="text-xl text-gray-400">We excel in diverse manufacturing services tailored for
-                            industry leaders. From expert assembly to precision parts production, each process ensures
-                            unparalleled quality and efficiency. Dive in and explore our comprehensive core offerings to
-                            meet your demands.</p>
+                        <h2 className="h2 mb-4">[placeholder]</h2>
+                        <p className="text-xl text-gray-400">[placeholder]</p>
                     </div>
 
                     {/* Items */}
@@ -33,10 +30,8 @@ export default function Features() {
                                 <img className="w-12 h-12" src="/images/icons/assembly.png"
                                      alt="Assembly Services Icon"/>
                             </div>
-                            <h4 className="h4 mb-2">Product Assembly</h4>
-                            <p className="text-lg text-gray-400 text-center">Expert assembly services tailorable to your
-                                needs. Combining precision, efficiency, and reliability to deliver top-tier finished
-                                products every time.</p>
+                            <h4 className="h4 mb-2">[placeholder]</h4>
+                            <p className="text-lg text-gray-400 text-center">[placeholder]</p>
                         </div>
 
                         {/* 2nd item */}
@@ -57,9 +52,8 @@ export default function Features() {
                                 <img className="w-12 h-12" src="/images/icons/stamping.png"
                                      alt="Stamping Icon"/>
                             </div>
-                            <h4 className="h4 mb-2">Stamping</h4>
-                            <p className="text-lg text-gray-400 text-center">Crafting with precision, our stamping
-                                processes shape metals to exact specifications, guaranteeing durability and fit.</p>
+                            <h4 className="h4 mb-2">[placeholder]</h4>
+                            <p className="text-lg text-gray-400 text-center">[placeholder]</p>
                         </div>
 
                         {/* 3rd item */}
@@ -80,10 +74,8 @@ export default function Features() {
                                 <img className="w-12 h-12" src="/images/icons/machining.png"
                                      alt="Machining Icon"/>
                             </div>
-                            <h4 className="h4 mb-2">Machining</h4>
-                            <p className="text-lg text-gray-400 text-center">Mastering machining manufacturing, we craft
-                                precision components with utmost accuracy. Experience top-tier quality and detailed
-                                finishes in every product.</p>
+                            <h4 className="h4 mb-2">[placeholder]</h4>
+                            <p className="text-lg text-gray-400 text-center">[placeholder]</p>
                         </div>
 
                         {/* 4th item */}
@@ -102,9 +94,8 @@ export default function Features() {
                                 <img className="w-12 h-12" src="/images/icons/injection_mold.png"
                                      alt="Injection Molding Icon"/>
                             </div>
-                            <h4 className="h4 mb-2">Plastic Molding</h4>
-                            <p className="text-lg text-gray-400 text-center">Transforming designs into tangible
-                                products, our injection molding delivers precision and efficiency in every mold.</p>
+                            <h4 className="h4 mb-2">[placeholder]</h4>
+                            <p className="text-lg text-gray-400 text-center">[placeholder]</p>
                         </div>
 
                         {/* 5th item */}
@@ -121,10 +112,8 @@ export default function Features() {
                                 <img className="w-12 h-12" src="/images/icons/die_casting.png"
                                      alt="Die Casting Icon"/>
                             </div>
-                            <h4 className="h4 mb-2">Die Casting</h4>
-                            <p className="text-lg text-gray-400 text-center">Specialized in die casting manufacturing,
-                                we transform molten metal into precision parts. Achieve superior quality and intricate
-                                designs with our advanced casting solutions.</p>
+                            <h4 className="h4 mb-2">[placeholder]</h4>
+                            <p className="text-lg text-gray-400 text-center">[placeholder]</p>
                         </div>
 
                         {/* 6th item */}
@@ -142,10 +131,8 @@ export default function Features() {
                                 <img className="w-12 h-12" src="/images/icons/production.png"
                                      alt="Parts Production Icon"/>
                             </div>
-                            <h4 className="h4 mb-2">Engineering Consultation</h4>
-                            <p className="text-lg text-gray-400 text-center">Our engineering consultation and parts
-                                production services are the cornerstone of manufacturing excellence across various
-                                industries.</p>
+                            <h4 className="h4 mb-2">[placeholder]</h4>
+                            <p className="text-lg text-gray-400 text-center">[placeholder]</p>
                         </div>
                     </div>
                 </div>

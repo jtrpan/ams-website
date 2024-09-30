@@ -3,44 +3,43 @@ import Head from 'next/head';
 // Quality-specific content
 // Structured Quality Commitment Content
 const qualityContent = {
-    title: "Uncompromised Quality in Manufacturing",
-    description: "Our dedication to quality is unmatched. From initial concept to final product, we ensure each step meets our rigorous quality standards.",
+    title: "[title]",
+    description: "[description]",
     commitmentSections: [
         {
-            title: "Our Standard of Excellence",
-            content: `At Hash Machinery Systems, our commitment to quality is not just an assertion; it's a standard that we live by. It's ingrained in every aspect of our operations, ensuring that each piece of machinery we design, and every part that we manufacture, stands up to rigorous criteria and surpasses our customers’ expectations.`
+            title: "[title]",
+            content: '[content]',
         },
         {
-            title: "Innovation and Precision in Production",
-            content: `From the conceptual beginnings to the final touches, our process is a journey of meticulousness. We begin by embracing innovative designs, fortified by advanced technology, ensuring that precision isn't just achieved; it's a consistent outcome. Our raw materials are sourced from industry leaders, guaranteeing durability and performance in every component we produce.`
+            title: "[title]",
+            content: '[content]',
         },
         {
-            title: "Rigorous Quality Assurance",
-            content: `But we don't stop at the production line. Each product undergoes thorough testing, challenging them under various conditions to confirm their resilience and reliability. This meticulous quality assurance process signifies our full confidence in the products that bear our name, ensuring they not only meet the industry standards but purpleefine them.`
+            title: "[title]",
+            content: '[content]',
         },
         {
-            title: "Investment in Our People",
-            content: `Moreover, our commitment transcends the tangible products. We invest in our people, the custodians of our quality promise. Through continuous training and development, our skilled workforce stays ahead of the latest industry trends and standards, driving innovation and maintaining our reputation as leaders in manufacturing excellence.`
+            title: "[title]",
+            content: '[content]',
         },
         {
-            title: "Certifications and Compliance",
-            content: `Beyond compliance, our certifications are a testament to our high standards. We adhere to specific international/national quality standards/certifications, affirming our relentless pursuit of quality. For us, these aren't just accolades; they are a reminder of our responsibility towards our clientele and the trust they place in our products and practices.`
+            title: "[title]",
+            content: '[content]',
         },
         {
-            title: "Transparency and Partnership",
-            content: `In our promise of transparency, we welcome client inspections and audits, embracing an open-door policy that fortifies trust and fosters long-term partnerships. We believe in accountability and ensure that we are reachable and responsive, solidifying client confidence in our commitment to not just delivering solutions but embodying quality.`
+            title: "[title]",
+            content: '[content]',
         },
         {
-            title: "Our Lasting Commitment",
-            content: `At Hash Machinery Systems, quality is our identity. It's the promise we keep with every product we ship and every service we provide. It’s not just about what we create; it's about the lasting impressions and the enduring relationships we build. Because when it comes to quality, there are no shortcuts, and we are dedicated to upholding this truth for generations to come.`
+            title: "[title]",
+            content: '[content]',
         },
     ],
-    // ... (other sections like how quality is maintained, standards or certifications, etc.)
 };
 
 
 export const metadata = {
-    title: 'Quality Policy',
+    title: '[title]',
     description: qualityContent.description,
 };
 
@@ -59,8 +58,10 @@ export default function Quality() {
 
                         {/* Header */}
                         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                            <h1 className="text-4xl md:text-5xl font-extrabold mb-4" data-aos="fade-up">Quality Assurance</h1>
-                            <p className="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">{qualityContent.description}</p>
+                            <h1 className="text-4xl md:text-5xl font-extrabold mb-4" data-aos="fade-up">Quality
+                                Assurance</h1>
+                            <p className="text-xl text-gray-400" data-aos="fade-up"
+                               data-aos-delay="200">{qualityContent.description}</p>
                         </div>
 
                         {/* Main Content */}

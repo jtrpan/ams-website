@@ -18,7 +18,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             // Email options
             const mailOptions = {
                 from: req.body.email, // sender address
-                to: 'jimmytcpan@gmail.com', // list of receivers
+                to: 'jamespan@ucanpay.ca', // list of receivers
                 subject: `New message from ${req.body.name}`,
                 text: req.body.message,
                 // You can also use HTML content

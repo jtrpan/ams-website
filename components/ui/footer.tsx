@@ -22,7 +22,7 @@ export default function Footer() {
                                     </svg>
                                 </Link>
                             </div>
-                            <div className="text-gray-400">Hash Machinery Systems is dedicated to pioneering advanced
+                            <div className="text-gray-400">UCanPay AMS is dedicated to pioneering advanced
                                 manufacturing solutions, serving industries globally with unparalleled quality and
                                 precision.
                             </div>

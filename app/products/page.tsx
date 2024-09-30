@@ -17,12 +17,7 @@ export default function Products() {
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                         <h1 className="h1 mb-4" data-aos="fade-up">Products</h1>
                         <p className="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">
-                            At Hash Machinery Systems (HMS), we utilize advanced manufacturing technology to produce
-                            precision-machined products for global clients across industries such as Telecom,
-                            Automobile, Medical, Home Appliances, Military, and Aerospace. Our expertise in complex
-                            component manufacturing ensures each product meets the highest standards of precision and
-                            performance, fulfilling the specific needs of each sector with innovative and reliable
-                            solutions.
+                            [description]
                         </p>
                     </div>
 
@@ -32,25 +27,25 @@ export default function Products() {
                             <div className="image-button">
                                 <img src="/images/image_buttons/die_casting2.jpg" alt="Die Casting"/>
                                 <div className="overlay-text">
-                                    <Link href="products/diecasting">Die Casting Products</Link>
+                                    <Link href="products/diecasting">[placeholder]</Link>
                                 </div>
                             </div>
                             <div className="image-button">
                                 <img src="/images/image_buttons/machining2.jpg" alt="Die Casting"/>
                                 <div className="overlay-text">
-                                    <Link href="products/machining">Machining Products</Link>
+                                    <Link href="products/machining">[placeholder]</Link>
                                 </div>
                             </div>
                             <div className="image-button">
                                 <img src="/images/image_buttons/plastic_mold2.jpg" alt="Die Casting"/>
                                 <div className="overlay-text">
-                                    <Link href="products/plastic_molding">Plastic Molding Products</Link>
+                                    <Link href="products/plastic_molding">[placeholder]</Link>
                                 </div>
                             </div>
                             <div className="image-button">
                                 <img src="/images/image_buttons/stamping2.jpg" alt="Die Casting"/>
                                 <div className="overlay-text">
-                                    <Link href="products/stamping">Stamping Products</Link>
+                                    <Link href="products/stamping">[placeholder]</Link>
                                 </div>
                             </div>
                         </div>

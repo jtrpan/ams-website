@@ -93,8 +93,8 @@ const architects_daughter = localFont({
 // })
 
 export const metadata = {
-    title: 'Hash Machinery Systems',
-    description: 'Welcome to Hash Machinery Systems.',
+    title: 'UCanPay AMS',
+    description: 'Welcome to UCanPay AMS.',
 }
 
 export default function RootLayout({
@@ -115,4 +115,3 @@ export default function RootLayout({
         </html>
     )
 }
- 

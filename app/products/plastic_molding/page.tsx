@@ -24,7 +24,7 @@ export default function Molding() {
                         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                             <h1 className="h1 mb-4" data-aos="fade-up" data-aos-delay="200">Plastic Molding</h1>
                             <p className="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="400">
-                                At Hash Machinery Systems (HMS), we specialize in the production of high-grade plastic
+                                At UCanPay AMS (HMS), we specialize in the production of high-grade plastic
                                 molding products, particularly for the lighting industry. Our expertise shines in the
                                 manufacturing of critical components like LED lenses, reflectors, and housing products —
                                 found in a wide array of applications. Our commitment to quality and innovation ensures

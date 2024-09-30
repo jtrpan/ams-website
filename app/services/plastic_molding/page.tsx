@@ -24,7 +24,7 @@ export default function Molding() {
                         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                             <h1 className="h1 mb-4" data-aos="fade-up" data-aos-delay="200">Plastic Molding</h1>
                             <p className="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="400">
-                                At Hash Machinery Systems (HMS), our plastic molding services cater to sectors like
+                                At UCanPay AMS (HMS), our plastic molding services cater to sectors like
                                 electronics, automotive, and medical. We offer comprehensive solutions from mold design
                                 to final production, emphasizing innovation, precision, and reliability. With
                                 state-of-the-art equipment and experienced professionals, HMS sets industry standards in
@@ -54,7 +54,7 @@ export default function Molding() {
                                             className="font-architects-daughter text-xl text-red-600 mb-2">Flexibility
                                         </div>
                                         <h3 className="h3 mb-3">Custom Mold Design</h3>
-                                        <p className="text-xl text-gray-400 mb-4">Hash Machinery Systems excels in
+                                        <p className="text-xl text-gray-400 mb-4">UCanPay AMS excels in
                                             creating custom mold designs tailored to your specific needs, ensuring
                                             optimal product functionality and aesthetics.
                                         </p>

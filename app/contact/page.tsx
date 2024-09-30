@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic';
 // import { useEffect } from 'react';
 export const metadata = {
     title: 'Contact',
-    description: 'Get in touch with Hash Machinery Systems for inquiries about our products and services or for customer support.',
+    description: 'Get in touch with UCanPay AMS for inquiries about our products and services or for customer support.',
 }
 
 import Link from 'next/link';

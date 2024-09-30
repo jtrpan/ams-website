@@ -24,11 +24,7 @@ export default function Stamping() {
                         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                             <h1 className="h1 mb-4" data-aos="fade-up" data-aos-delay="200">Stamping</h1>
                             <p className="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="400">
-                                At Hash Machinery Systems (HMS), we're renowned for our exceptional stamping services,
-                                catering to the telecommunications and automotive industries with high-grade parts. Our
-                                dedication to innovation and precision meets the dynamic demands of today's market.
-                                Combining traditional craftsmanship with modern technology, we ensure each product
-                                exemplifies enduring quality.</p>
+                                [placeholder]</p>
                         </div>
                     </div>
                     <div>

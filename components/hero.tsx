@@ -29,7 +29,7 @@ export default function Hero() {
 
                     {/* Section header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-                        <h1 className="h1 mb-4" data-aos="fade-up">Hash Machinery Systems</h1>
+                        <h1 className="h1 mb-4" data-aos="fade-up">UCanPay AMS</h1>
                         <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Hash Machinery
                             Systems (HMS) is a quality contract manufacturer and importer of cast products, stampings,
                             machining, plastic injection molding, etc. We believe that quality, service and pricing are

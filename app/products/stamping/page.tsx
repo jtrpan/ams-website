@@ -24,7 +24,7 @@ export default function Stamping() {
                         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                             <h1 className="h1 mb-4" data-aos="fade-up" data-aos-delay="200">Stamping</h1>
                             <p className="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="400">
-                                At Hash Machinery Systems (HMS), our legacy in the stamping industry stretches over a
+                                At UCanPay AMS (HMS), our legacy in the stamping industry stretches over a
                                 decade, showcasing our unwavering commitment to excellence and quality. Specializing in
                                 the production of stamping products, we've established ourselves as a cornerstone in the
                                 realms of Telecom, Automobile, and Home Appliances. Our reputation as one of the main
