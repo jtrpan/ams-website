@@ -5,7 +5,7 @@ on:
     branches:
       - master
   pull_request:
-    types: [ opened, synchronize, reopened, closed ]
+    types: [opened, synchronize, reopened, closed]
     branches:
       - master
 
@@ -20,11 +20,12 @@ jobs:
           submodules: true
           lfs: false
 
-      # Setup Node.js to ensure compatible version is used (v20 in this case)
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '20' # Ensures Node.js version 20 is used
+      # Use NVM to install the latest Node.js version (v20)
+      - name: Install Node.js using NVM
+        run: |
+          nvm install node
+          nvm use node
+          node -v # Ensure node version 20 is being used
 
       - name: Install Dependencies
         run: yarn install --prefer-offline
@@ -37,7 +38,6 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
           output_location: "" # Built app content directory - optional
