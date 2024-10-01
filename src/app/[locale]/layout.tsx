@@ -23,10 +23,17 @@ const space_grotesk = Space_Grotesk({
   variable: '--font-space-grotesk'
 })
 export const metadata: Metadata = {
-  title: 'Next Temp',
-  description: 'create next app By Yahya Parvar!'
+  title: 'UCanPay - Seamless Payments for Global Success',
+  description: 'UCanPay provides a seamless and secure payment platform to fuel your global business.',
+  keywords: 'payments, global payments, secure payments, UCanPay, payment gateway',
+  openGraph: {
+    title: 'UCanPay',
+    description: 'Fuel your business with seamless global payments.',
+    images: ['/og-image.jpg'],
+    url: 'https://ucanpay.com',
+    type: 'website'
+  }
 }
-
 export default function RootLayout({
   children,
   params: { locale }
@@ -46,7 +53,7 @@ export default function RootLayout({
         <ThemeProvider
           enableSystem
           attribute='class'
-          defaultTheme='light'
+          defaultTheme='dark'
           themes={[
             'light',
             'dark',
