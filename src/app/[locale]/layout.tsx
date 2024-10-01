@@ -8,6 +8,7 @@ import {
 import { Inter, Rubik, Space_Grotesk } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
 import { Header } from './components/Header'
+import { Footer } from './components/Footer'
 import './globals.css'
 
 const inter = Inter({
@@ -51,7 +52,7 @@ export default function RootLayout({
     >
       <body>
         <ThemeProvider
-          enableSystem
+          enableSystem={true}
           attribute='class'
           defaultTheme='dark'
           themes={[
@@ -60,9 +61,9 @@ export default function RootLayout({
             'instagram',
             'facebook',
             'discord',
-            'netflix',
+            // 'netflix',
             'twilight',
-            'reddit'
+            // 'reddit'
           ]}
         >
           <NextIntlClientProvider
@@ -81,7 +82,8 @@ export default function RootLayout({
               showSpinner={false}
             />
             <Header locale={locale} />
-            <main className='mx-auto max-w-screen-2xl'>{children}</main>
+            <main className='mx-auto max-w-screen-2xl pb-20'>{children}</main>
+            <Footer /> {/* Add Footer here */}
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
