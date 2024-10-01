@@ -20,14 +20,17 @@ jobs:
           submodules: true
           lfs: false
 
-      # Setup Node.js to ensure compatible version is used (v20 in this case)
+      # Setup Node.js to ensure the correct version is used
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20' # Ensures Node.js version 20 is used
+          node-version: '20' # Ensure Node.js version 20 is used
 
-      - name: Install Dependencies
-        run: yarn install --prefer-offline
+      # Ensure `rimraf` works properly by upgrading or resolving dependency issues
+      - name: Ensure Compatible Dependencies
+        run: |
+          rm -f package-lock.json # Remove package-lock.json to avoid mixing package managers
+          yarn install --prefer-offline
 
       - name: Build And Deploy
         id: builddeploy
