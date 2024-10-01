@@ -7,15 +7,14 @@ export default function DashboardPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center py-24 bg-cover bg-center"
-               style={{ backgroundImage: 'url(\'/hero-bg.jpg\')' }}>
+      <section className="flex flex-col items-center justify-center py-24 bg-cover bg-center">
         <h1 className="text-center text-7xl font-extrabold leading-tight">
           {t('UCanPay')}{' '}
           <span className="bg-span-bg bg-clip-text text-transparent">
-            {t('AMS Project')}
+            {t('AMS_Project')}
           </span>
           <br />
-          {t('Redefining Payment Solutions')}
+          {t('Redefining_Payment_Solutions')}
         </h1>
         <div className="my-6 px-20 text-center text-2xl text-text-secondary">
           {t(
@@ -100,7 +99,8 @@ export default function DashboardPage() {
           className="mx-auto grid max-w-screen-lg grid-cols-3 gap-7 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-10">
           <div className="text-center">
             <p className="italic text-gray-700 dark:text-gray-300">
-              &quot;UCanPay helped us expand our business to 50+ markets globally. Their API integration was seamless.&quot;
+              &quot;UCanPay helped us expand our business to 50+ markets globally. Their API integration was
+              seamless.&quot;
             </p>
             <span className="block mt-2 font-semibold text-black dark:text-white">- Jane Doe, CEO of TechCorp</span>
           </div>
@@ -112,7 +112,8 @@ export default function DashboardPage() {
           </div>
           <div className="text-center">
             <p className="italic text-gray-700 dark:text-gray-300">
-              &quot;Their global reach and fraud prevention tools make UCanPay an essential part of our payment stack.&quot;
+              &quot;Their global reach and fraud prevention tools make UCanPay an essential part of our payment
+              stack.&quot;
             </p>
             <span
               className="block mt-2 font-semibold text-black dark:text-white">- Emily Johnson, COO of RetailHub</span>

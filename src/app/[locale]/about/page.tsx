@@ -21,10 +21,6 @@ export default function About() {
 
       <h2>{t('Meet Our Team')}</h2>
       <p>{t('UCanPay AMS is led by a passionate team of engineers, designers, and payment experts who are dedicated to revolutionizing the payment landscape for businesses worldwide.')}</p>
-
-      <footer>
-        <p>© 2024 UCanPay - All Rights Reserved.</p>
-      </footer>
     </div>
   );
 }
