@@ -1,4 +1,18 @@
 {
+  "about": {
+    "About UCanPay AMS": "About UCanPay AMS",
+    "We provide secure, seamless, and scalable payment solutions tailored to grow your business.": "We provide secure, seamless, and scalable payment solutions tailored to grow your business.",
+    "Our Mission": "Our Mission",
+    "Our mission is to empower businesses with advanced payment technologies, ensuring smoother transactions, higher conversion rates, and comprehensive security solutions.": "Our mission is to empower businesses with advanced payment technologies, ensuring smoother transactions, higher conversion rates, and comprehensive security solutions.",
+    "Why Choose Us?": "Why Choose Us?",
+    "Cutting-edge payment technology to boost your business.": "Cutting-edge payment technology to boost your business.",
+    "Global reach with localized payment solutions.": "Global reach with localized payment solutions.",
+    "Dedicated customer support 24/7.": "Dedicated customer support 24/7.",
+    "Industry-leading fraud prevention and security tools.": "Industry-leading fraud prevention and security tools.",
+    "Meet Our Team": "Meet Our Team",
+    "UCanPay AMS is led by a passionate team of engineers, designers, and payment experts who are dedicated to revolutionizing the payment landscape for businesses worldwide.": "UCanPay AMS is led by a passionate team of engineers, designers, and payment experts who are dedicated to revolutionizing the payment landscape for businesses worldwide."
+  },
+
   "About": "About",
   "Support": "Support",
   "Other": "Other",
@@ -14,6 +28,5 @@
   "Automatic_Image_Font_and_Script_Optimizations_for_improved_UX_and_Core_Web_Vitals": "Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.",
   "Versatile": "Versatile",
   "A_rich_incredibly_adoptable_template_that_scales_between_a_small_showcase_website_and_a_full_size_app": "A rich, incredibly adoptable template that scales between a small showcase website and a full-size app.",
-  "This_is_a_simple_about_page_just_to_show_how_you_can_use_the_internationalization_in_different_pages": "This is a simple about page just to show how you can use the internationalization in different pages",
-  "Performant": "Performant"
+  "This_is_a_simple_about_page_just_to_show_how_you_can_use_the_internationalization_in_different_pages": "This is a simple about page just to show how you can use the internationalization in different pages.",
 }
