@@ -77,7 +77,7 @@ export default function DashboardPage() {
             )}
           </p>
           <div className="flex flex-row gap-6 justify-center">
-            <a href="/solutions" target="_blank">git
+            <a href="/solutions" target="_blank">
               <Button rounded size="large" variant="primary">
                 {t('Explore Our Solutions')}
               </Button>
@@ -100,19 +100,19 @@ export default function DashboardPage() {
           className="mx-auto grid max-w-screen-lg grid-cols-3 gap-7 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-10">
           <div className="text-center">
             <p className="italic text-gray-700 dark:text-gray-300">
-              "UCanPay helped us expand our business to 50+ markets globally. Their API integration was seamless."
+              &quot;UCanPay helped us expand our business to 50+ markets globally. Their API integration was seamless.&quot;
             </p>
             <span className="block mt-2 font-semibold text-black dark:text-white">- Jane Doe, CEO of TechCorp</span>
           </div>
           <div className="text-center">
             <p className="italic text-gray-700 dark:text-gray-300">
-              "We increased our approval rates by 15% after switching to UCanPay’s optimization tools!"
+              &quot;We increased our approval rates by 15% after switching to UCanPay’s optimization tools!&quot;
             </p>
             <span className="block mt-2 font-semibold text-black dark:text-white">- John Smith, CFO of FinBiz</span>
           </div>
           <div className="text-center">
             <p className="italic text-gray-700 dark:text-gray-300">
-              "Their global reach and fraud prevention tools make UCanPay an essential part of our payment stack."
+              &quot;Their global reach and fraud prevention tools make UCanPay an essential part of our payment stack.&quot;
             </p>
             <span
               className="block mt-2 font-semibold text-black dark:text-white">- Emily Johnson, COO of RetailHub</span>
