@@ -22,12 +22,12 @@ export default function DashboardPage() {
           )}
         </div>
         <div className="mt-4 flex flex-row gap-4">
-          <a href="/contact" target="_blank">
+          <a href="/en/contact" target="_blank">
             <Button rounded size="large">
               {t('Contact_Us')}
             </Button>
           </a>
-          <a href="/learn-more" target="_blank">
+          <a href="/en/learn-more" target="_blank">
             <Button rounded size="large" variant="secondary">
               {t('Learn_More')}
             </Button>
@@ -43,23 +43,23 @@ export default function DashboardPage() {
             <h2 className="mb-3  text-xl font-semibold">{t('Secure_Payments')}</h2>
             <p className="text-text-secondary max-lg:max-w-[500px]">
               {t(
-                'Ensure the highest levels of payment security with advanced encryption and fraud detection technologies.'
+                'Ensure_highest_payment_security'
               )}
             </p>
           </div>
           <div className="text-center">
-            <h2 className="mb-3 text-xl font-semibold">{t('Global Reach')}</h2>
+            <h2 className="mb-3 text-xl font-semibold">{t('Global_Reach')}</h2>
             <p className="text-text-secondary max-lg:max-w-[500px]">
               {t(
-                'Expand your business into 150+ currencies and accept payments from anywhere in the world with our global acquiring services.'
+                'Expand_your_business_into_150_currencies'
               )}
             </p>
           </div>
           <div className="text-center">
-            <h2 className="mb-3 text-xl font-semibold">{t('Flexible Integration')}</h2>
+            <h2 className="mb-3 text-xl font-semibold">{t('Flexible_Integration')}</h2>
             <p className="text-text-secondary max-lg:max-w-[500px]">
               {t(
-                'Seamlessly integrate our payment solutions with your platform using our developer-friendly API and SDKs.'
+                'Seamlessly_integrate_with_API_SDKs'
               )}
             </p>
           </div>
@@ -69,21 +69,21 @@ export default function DashboardPage() {
       {/* Why UCanPay Section */}
       <section className="py-20 bg-gray-100 dark:bg-gray-900">
         <div className="mx-auto max-w-screen-lg text-center">
-          <h2 className="text-4xl font-bold mb-8 text-black dark:text-white">{t('Why Choose UCanPay?')}</h2>
+          <h2 className="text-4xl font-bold mb-8 text-black dark:text-white">{t('Why_Choose_UCanPay')}</h2>
           <p className="text-xl mb-10 text-gray-700 dark:text-gray-300">
             {t(
-              'UCanPay is designed to accelerate your business growth by offering a comprehensive suite of payment solutions that drive higher conversions, reduce costs, and open new revenue streams.'
+              'UCanPay_designed_to_accelerate_growth'
             )}
           </p>
           <div className="flex flex-row gap-6 justify-center">
-            <a href="/solutions" target="_blank">
+            <a href="/en/solutions" target="_blank">
               <Button rounded size="large" variant="primary">
-                {t('Explore Our Solutions')}
+                {t('Explore_Our_Solutions')}
               </Button>
             </a>
-            <a href="/case-studies" target="_blank">
+            <a href="/en/resources" target="_blank">
               <Button rounded size="large" variant="secondary">
-                {t('See Case Studies')}
+                {t('See_Case_Studies')}
               </Button>
             </a>
           </div>
@@ -93,7 +93,7 @@ export default function DashboardPage() {
       {/* Testimonials Section */}
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <h2 className="text-center text-4xl font-bold mb-10 text-black dark:text-white">
-          {t('What Our Clients Say')}
+          {t('What_Our_Clients_Say')}
         </h2>
         <div
           className="mx-auto grid max-w-screen-lg grid-cols-3 gap-7 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-10">
@@ -124,14 +124,14 @@ export default function DashboardPage() {
 
       {/* Call to Action Section */}
       <section className="bg-blue-500 text-white py-20">
-        <h2 className="text-center text-4xl font-bold mb-6">{t('Ready to Turbocharge Your Payments?')}</h2>
+        <h2 className="text-center text-4xl font-bold mb-6">{t('Ready_to_Turbocharge_Your_Payments')}</h2>
         <p className="text-center text-xl mb-10">
-          {t('Get started with UCanPay today and experience seamless, secure, and scalable payment solutions.')}
+          {t('Get_started_with_UCanPay_today')}
         </p>
         <div className="flex justify-center">
-          <a href="/contact" target="_blank">
+          <a href="/en/contact" target="_blank">
             <Button rounded size="large" variant="primary">
-              {t('Get Started')}
+              {t('Get_Started')}
             </Button>
           </a>
         </div>
