@@ -18,18 +18,18 @@ export default function DashboardPage() {
         </h1>
         <div className="my-6 px-20 text-center text-2xl text-text-secondary">
           {t(
-            'Unlock new revenue possibilities with UCanPay, a trusted platform for secure, fast, and reliable payment solutions.'
+            'Unlock_new_revenue_possibilities_with_UCanPay'
           )}
         </div>
         <div className="mt-4 flex flex-row gap-4">
           <a href="/contact" target="_blank">
             <Button rounded size="large">
-              {t('Contact Us')}
+              {t('Contact_Us')}
             </Button>
           </a>
           <a href="/learn-more" target="_blank">
             <Button rounded size="large" variant="secondary">
-              {t('Learn More')}
+              {t('Learn_More')}
             </Button>
           </a>
         </div>
@@ -40,7 +40,7 @@ export default function DashboardPage() {
         <div
           className="mx-auto grid max-w-screen-lg grid-cols-3 gap-7 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-10">
           <div className="text-center">
-            <h2 className="mb-3  text-xl font-semibold">{t('Secure Payments')}</h2>
+            <h2 className="mb-3  text-xl font-semibold">{t('Secure_Payments')}</h2>
             <p className="text-text-secondary max-lg:max-w-[500px]">
               {t(
                 'Ensure the highest levels of payment security with advanced encryption and fraud detection technologies.'

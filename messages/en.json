@@ -1,15 +1,4 @@
 {
-  "about": {
-    "Seamlessly_integrate_our_payment_solutions_with_your_platform": "Seamlessly integrate our payment solutions with your platform using our developer-friendly API and SDKs.",
-    "Why_Choose_UCanPay": "Why Choose UCanPay?",
-    "UCanPay_is_designed_to_accelerate_your_business_growth": "UCanPay is designed to accelerate your business growth by offering a comprehensive suite of payment solutions that drive higher conversions, reduce costs, and open new revenue streams.",
-    "Explore_Our_Solutions": "Explore Our Solutions",
-    "See_Case_Studies": "See Case Studies",
-    "What_Our_Clients_Say": "What Our Clients Say",
-    "Ready_to_Turbocharge_Your_Payments": "Ready to Turbocharge Your Payments?",
-    "Get_started_with_UCanPay_today": "Get started with UCanPay today and experience seamless, secure, and scalable payment solutions.",
-    "Get_Started": "Get Started"
-  },
   "UCanPay": "UCanPay",
   "AMS_Project": "AMS Project",
   "Redefining_Payment_Solutions": "Redefining Payment Solutions",
@@ -44,5 +33,17 @@
   "Automatic_Image_Font_and_Script_Optimizations_for_improved_UX_and_Core_Web_Vitals": "Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.",
   "Versatile": "Versatile",
   "A_rich_incredibly_adoptable_template_that_scales_between_a_small_showcase_website_and_a_full_size_app": "A rich, incredibly adoptable template that scales between a small showcase website and a full-size app.",
-  "This_is_a_simple_about_page_just_to_show_how_you_can_use_the_internationalization_in_different_pages": "This is a simple about page just to show how you can use the internationalization in different pages."
+  "This_is_a_simple_about_page_just_to_show_how_you_can_use_the_internationalization_in_different_pages": "This is a simple about page just to show how you can use the internationalization in different pages.",
+
+  "about": {
+    "Seamlessly_integrate_our_payment_solutions_with_your_platform": "Seamlessly integrate our payment solutions with your platform using our developer-friendly API and SDKs.",
+    "Why_Choose_UCanPay": "Why Choose UCanPay?",
+    "UCanPay_is_designed_to_accelerate_your_business_growth": "UCanPay is designed to accelerate your business growth by offering a comprehensive suite of payment solutions that drive higher conversions, reduce costs, and open new revenue streams.",
+    "Explore_Our_Solutions": "Explore Our Solutions",
+    "See_Case_Studies": "See Case Studies",
+    "What_Our_Clients_Say": "What Our Clients Say",
+    "Ready_to_Turbocharge_Your_Payments": "Ready to Turbocharge Your Payments?",
+    "Get_started_with_UCanPay_today": "Get started with UCanPay today and experience seamless, secure, and scalable payment solutions.",
+    "Get_Started": "Get Started"
+  }
 }
