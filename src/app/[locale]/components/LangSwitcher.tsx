@@ -17,13 +17,14 @@ const LangSwitcher: React.FC = () => {
   const [isOptionsExpanded, setIsOptionsExpanded] = useState(false)
   const options: Option[] = [
     { country: 'English', code: 'en' }, // Native name is the same
-    { country: 'Deutsch', code: 'de' },
-    { country: 'Français', code: 'fr' },
-    { country: 'Español', code: 'es' },
-    { country: 'Русский', code: 'ru' },
-    { country: '日本語', code: 'ja' },
-    { country: 'العربية', code: 'ar' },
-    { country: 'فارسی', code: 'fa' }
+    { country: '中文', code: 'cn' },
+    // { country: 'Français', code: 'fr' },
+    // { country: 'Español', code: 'es' },
+    // { country: 'Русский', code: 'ru' },
+    // { country: 'Deutsch', code: 'de' },
+    // { country: '日本語', code: 'ja' },
+    // { country: 'العربية', code: 'ar' },
+    // { country: 'فارسی', code: 'fa' }
   ]
 
   return (

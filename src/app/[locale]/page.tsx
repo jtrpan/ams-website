@@ -23,11 +23,11 @@ export default function DashboardPage() {
         </div>
         <div className="mt-4 flex flex-row gap-4">
           <a href="/en/contact" target="_blank">
-            <Button rounded size="large">
+            <Button rounded size="large" >
               {t('Contact_Us')}
             </Button>
           </a>
-          <a href="/en/learn-more" target="_blank">
+          <a href="/en/about/about-us" target="_blank">
             <Button rounded size="large" variant="secondary">
               {t('Learn_More')}
             </Button>
@@ -35,10 +35,25 @@ export default function DashboardPage() {
         </div>
       </section>
 
+      {/* Paragraph Section */}
+      <section className="bg-selected py-20 max-lg:py-10">
+        <div className="mx-auto max-w-screen-lg text-center">
+          <h2 className="text-4xl font-bold mb-8 text-black dark:text-white">{t('Powering_the_future_of_payments')}</h2>
+          <p className="text-xl mb-10 text-gray-700 dark:text-gray-300">
+            {t(
+              'At_UCanPay_we_empower'
+            )}
+          </p>
+        </div>
+      </section>
+
       {/* Key Features Section */}
       <section className="bg-background-secondary py-20 max-lg:py-10">
+        <div className="mx-auto max-w-screen-lg text-center">
+          <h2 className="text-4xl font-bold mb-8 text-black dark:text-white">{t('Features')}</h2>
+        </div>
         <div
-          className="mx-auto grid max-w-screen-lg grid-cols-3 gap-7 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-10">
+          className="mx-auto grid max-w-screen-lg grid-cols-3 gap-14 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-10">
           <div className="text-center">
             <h2 className="mb-3  text-xl font-semibold">{t('Secure_Payments')}</h2>
             <p className="text-text-secondary max-lg:max-w-[500px]">
@@ -76,12 +91,12 @@ export default function DashboardPage() {
             )}
           </p>
           <div className="flex flex-row gap-6 justify-center">
-            <a href="/en/solutions" target="_blank">
+            <a href="/en/solutions/merchant-solutions" target="_blank">
               <Button rounded size="large" variant="primary">
                 {t('Explore_Our_Solutions')}
               </Button>
             </a>
-            <a href="/en/resources" target="_blank">
+            <a href="/en/resources/case-studies" target="_blank">
               <Button rounded size="large" variant="secondary">
                 {t('See_Case_Studies')}
               </Button>
