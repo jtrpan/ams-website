@@ -17,53 +17,49 @@ export default function Pricing() {
         <h2 className="text-4xl font-bold mb-8 text-primary text-center">{t('pricing_comparison_title')}</h2>
         <p className="text-lg text-text-secondary text-center mb-12">{t('pricing_comparison_desc')}</p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Starter Plan */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Interchange Plus */}
           <div className="p-6 bg-background-secondary rounded-lg shadow-lg">
             <h3 className="text-3xl font-semibold mb-4">{t('tier1_title')}</h3>
             <p className="text-lg text-text-secondary mb-6">{t('tier1_desc')}</p>
-            <ul className="list-disc pl-6">
-              <li>{t('tier1_point1')}</li>
-              <li>{t('tier1_point2')}</li>
-              <li>{t('tier1_point3')}</li>
-              <li>{t('tier1_point4')}</li>
-              <li>{t('tier1_point5')}</li>
-              <li>{t('tier1_point6')}</li>
-              <li>{t('tier1_point7')}</li>
+            <h4 className="text-2xl font-bold mb-4 flex items-center">⚡ {t('key_features')}</h4>
+            <ul className="list-none space-y-3">
+              <li>✅ {t('tier1_point1')}</li>
+              <li>✅ {t('tier1_point2')}</li>
+              <li>✅ {t('tier1_point3')}</li>
+              <li>✅ {t('tier1_point4')}</li>
+            </ul>
+            <br/>
+            <h4 className="text-2xl font-bold mb-4 flex items-center">🎯 {t('who_should_choose')}</h4>
+            <ul className="list-none space-y-3">
+              <li>✔ {t('tier1_point5')}</li>
+              <li>✔ {t('tier1_point6')}</li>
+              <li>✔ {t('tier1_point7')}</li>
             </ul>
           </div>
 
-          {/* Growth Plan */}
+          {/* Flat Rate (Growth Plan) */}
           <div className="p-6 bg-background-secondary rounded-lg shadow-lg">
             <h3 className="text-3xl font-semibold mb-4">{t('tier2_title')}</h3>
             <p className="text-lg text-text-secondary mb-6">{t('tier2_desc')}</p>
-            <ul className="list-disc pl-6">
-              <li>{t('tier2_point1')}</li>
-              <li>{t('tier2_point2')}</li>
-              <li>{t('tier2_point3')}</li>
-              <li>{t('tier2_point4')}</li>
-              <li>{t('tier2_point5')}</li>
-              <li>{t('tier2_point6')}</li>
-              <li>{t('tier2_point7')}</li>
+            <h4 className="text-2xl font-bold mb-4 flex items-center">⚡ {t('key_features')}</h4>
+            <ul className="list-none space-y-3">
+              <li>✅ {t('tier2_point1')}</li>
+              <li>✅ {t('tier2_point2')}</li>
+              <li>✅ {t('tier2_point3')}</li>
+              <li>✅ {t('tier2_point4')}</li>
             </ul>
-          </div>
-
-          {/* Enterprise Plan */}
-          <div className="p-6 bg-background-secondary rounded-lg shadow-lg">
-            <h3 className="text-3xl font-semibold mb-4">{t('tier3_title')}</h3>
-            <p className="text-lg text-text-secondary mb-6">{t('tier3_desc')}</p>
-            <ul className="list-disc pl-6">
-              <li>{t('tier3_point1')}</li>
-              <li>{t('tier3_point2')}</li>
-              <li>{t('tier3_point3')}</li>
-              <li>{t('tier3_point4')}</li>
-              <li>{t('tier3_point5')}</li>
-              <li>{t('tier3_point6')}</li>
-              <li>{t('tier3_point7')}</li>
+            <br />
+            <h4 className="text-2xl font-bold mb-4 flex items-center">🎯 {t('who_should_choose')}</h4>
+            <ul className="list-none space-y-3">
+              <li>✔ {t('tier2_point5')}</li>
+              <li>✔ {t('tier2_point6')}</li>
+              <li>✔ {t('tier2_point7')}</li>
             </ul>
           </div>
         </div>
       </div>
+
 
       {/* Competitive Pricing Table */}
       <div className="mb-24">
