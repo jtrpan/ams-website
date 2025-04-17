@@ -24,14 +24,13 @@ const space_grotesk = Space_Grotesk({
   variable: '--font-space-grotesk'
 })
 export const metadata: Metadata = {
-  title: 'UCanPay - Seamless Payments for Global Success',
-  description: 'UCanPay provides a seamless and secure payment platform to fuel your global business.',
-  keywords: 'payments, global payments, secure payments, UCanPay, payment gateway',
+  title: 'UCanPay AMS - Seamless Payments for Global Success',
+  description: 'UCanPay AMS provides a seamless and secure payment platform to fuel your global business.',
+  keywords: 'payments, global payments, secure payments, UCanPay, AMS, payment gateway',
   openGraph: {
-    title: 'UCanPay',
+    title: 'UCanPay AMS',
     description: 'Fuel your business with seamless global payments.',
-    images: ['/og-image.jpg'],
-    url: 'https://ucanpay.com',
+    url: 'https://ams.ucanpay.ca/en',
     type: 'website'
   }
 }
@@ -54,7 +53,7 @@ export default function RootLayout({
         <ThemeProvider
           enableSystem={true}
           attribute='class'
-          defaultTheme='dark'
+          defaultTheme='light'
           themes={[
             'light',
             'dark',

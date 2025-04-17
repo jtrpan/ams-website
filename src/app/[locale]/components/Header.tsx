@@ -127,6 +127,11 @@ export const Header: FC<Props> = ({ locale }) => {
               <div className="absolute z-20 mt-2 w-48 rounded-md bg-background-secondary shadow-lg">
                 <ul className="py-1">
                   <li>
+                    <Link lang={locale} href={`/resources/pricing`} className="block px-4 py-2 hover:bg-background" onClick={() => setDropdownOpen(null)}>
+                      {t('Pricing')}
+                    </Link>
+                  </li>
+                  <li>
                     <Link lang={locale} href={`/resources/case-studies`} className="block px-4 py-2 hover:bg-background" onClick={() => setDropdownOpen(null)}>
                       {t('Case_Studies')}
                     </Link>
@@ -134,11 +139,6 @@ export const Header: FC<Props> = ({ locale }) => {
                   <li>
                     <Link lang={locale} href={`/resources/news`} className="block px-4 py-2 hover:bg-background" onClick={() => setDropdownOpen(null)}>
                       {t('News')}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link lang={locale} href={`/resources/faqs`} className="block px-4 py-2 hover:bg-background" onClick={() => setDropdownOpen(null)}>
-                      {t('FAQs')}
                     </Link>
                   </li>
                 </ul>
@@ -162,14 +162,19 @@ export const Header: FC<Props> = ({ locale }) => {
                       {t('Help_Center')}
                     </Link>
                   </li>
-                  {/*<li>*/}
-                  {/*  <Link lang={locale} href={`/support/contact-support`} className="block px-4 py-2 hover:bg-background" onClick={() => setDropdownOpen(null)}>*/}
-                  {/*    {t('Contact_Support')}*/}
-                  {/*  </Link>*/}
-                  {/*</li>*/}
                   <li>
-                    <Link lang={locale} href={`/support/pricing`} className="block px-4 py-2 hover:bg-background" onClick={() => setDropdownOpen(null)}>
-                      {t('Pricing')}
+                    <Link lang={locale} href={`/support/user-agreement`} className="block px-4 py-2 hover:bg-background" onClick={() => setDropdownOpen(null)}>
+                      {t('User_Agreement')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link lang={locale} href={`/support/privacy-policy`} className="block px-4 py-2 hover:bg-background" onClick={() => setDropdownOpen(null)}>
+                      {t('Privacy_Policy')}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link lang={locale} href={`/support/faqs`} className="block px-4 py-2 hover:bg-background" onClick={() => setDropdownOpen(null)}>
+                      {t('FAQs')}
                     </Link>
                   </li>
                 </ul>

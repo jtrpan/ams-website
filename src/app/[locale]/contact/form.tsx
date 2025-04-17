@@ -1,16 +1,18 @@
-'use client';
+'use client'
 
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import React, { useState } from 'react'
+import emailjs from 'emailjs-com'
+import { useTranslations } from 'next-intl'
 
 const ContactForm = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState('');
+  const t = useTranslations('contact')
+  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [submitMessage, setSubmitMessage] = useState('')
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+    event.preventDefault()
 
-    const form = event.currentTarget;
+    const form = event.currentTarget
 
     // Send the form using EmailJS
     emailjs
@@ -22,27 +24,28 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          setIsSubmitted(true);
-          setSubmitMessage('Your message has been sent successfully!');
-          form.reset(); // Clear form after successful submission
+          console.log(result.text)
+          setIsSubmitted(true)
+          setSubmitMessage('Your message has been sent successfully!')
+          form.reset() // Clear form after successful submission
         },
         (error) => {
-          console.log(error.text);
-          setIsSubmitted(false);
-          setSubmitMessage('Failed to send the message. Please try again.');
+          console.log(error.text)
+          setIsSubmitted(false)
+          setSubmitMessage('Failed to send the message. Please try again.')
         }
-      );
-  };
+      )
+  }
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
       <div className="space-y-6 bg-background-secondary p-8 rounded-lg shadow-lg">
-        <h3 className="text-xl font-semibold text-text-secondary mb-4">Submit Ticket</h3>
+        <h3 className="text-xl font-semibold text-text-secondary mb-4">{t('submit_ticket')}</h3>
 
         <div className="flex flex-wrap -mx-2">
           <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
-            <label htmlFor="from_name" className="block text-sm font-medium text-text-secondary mb-2">Name</label>
+            <label htmlFor="from_name"
+                   className="block text-sm font-medium text-text-secondary mb-2">{t('name')}</label>
             <input
               type="text"
               id="from_name"
@@ -53,7 +56,8 @@ const ContactForm = () => {
           </div>
 
           <div className="w-full md:w-1/2 px-2">
-            <label htmlFor="from_addr" className="block text-sm font-medium text-text-secondary mb-2">Email</label>
+            <label htmlFor="from_addr"
+                   className="block text-sm font-medium text-text-secondary mb-2">{t('email')}</label>
             <input
               type="email"
               id="from_addr"
@@ -65,7 +69,7 @@ const ContactForm = () => {
         </div>
 
         <div className="flex flex-col">
-          <label htmlFor="message" className="block text-sm font-medium text-text-secondary mb-2">Message</label>
+          <label htmlFor="message" className="block text-sm font-medium text-text-secondary mb-2">{t('message')}</label>
           <textarea
             id="message"
             name="message"
@@ -87,11 +91,11 @@ const ContactForm = () => {
           value="Submit"
           className="w-full btn bg-button hover:bg-button-secondary text-button-text font-medium py-3 px-5 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-md"
         >
-          Send Message
+          {t('send_message')}
         </button>
       </div>
     </form>
-  );
-};
+  )
+}
 
-export default ContactForm;
+export default ContactForm
