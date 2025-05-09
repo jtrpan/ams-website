@@ -14,16 +14,16 @@ export default function DashboardPage() {
             {t('AMS_Project')}
           </span>
           <br />
-          {t('Redefining_Payment_Solutions')}
+          {t('Home_Title')}
         </h1>
         <div className="my-6 px-20 text-center text-2xl text-text-secondary">
           {t(
-            'Unlock_new_revenue_possibilities_with_UCanPay'
+            'Home_Tagline'
           )}
         </div>
         <div className="mt-4 flex flex-row gap-4">
           <a href="/en/contact" target="_blank">
-            <Button rounded size="large" >
+            <Button rounded size="large">
               {t('Contact_Us')}
             </Button>
           </a>
@@ -114,24 +114,24 @@ export default function DashboardPage() {
           className="mx-auto grid max-w-screen-lg grid-cols-3 gap-7 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-10">
           <div className="text-center">
             <p className="italic text-gray-700 dark:text-gray-300">
-              &quot;UCanPay helped us expand our business to 50+ markets globally. Their API integration was
-              seamless.&quot;
+              &quot;UCanPay made it simple to accept WeChat Pay and Alipay. It’s been a game changer for our Chinese
+              customers.&quot;
             </p>
-            <span className="block mt-2 font-semibold text-black dark:text-white">- Jane Doe, CEO of TechCorp</span>
+            <span className="block mt-2 font-semibold text-black dark:text-white">- Michelle Zhang, Owner of Golden Lotus Restaurant, Toronto</span>
           </div>
           <div className="text-center">
             <p className="italic text-gray-700 dark:text-gray-300">
-              &quot;We increased our approval rates by 15% after switching to UCanPay’s optimization tools!&quot;
+              &quot;Switching to UCanPay reduced our settlement time and helped cut down processing fees by over
+              20%&quot;
             </p>
-            <span className="block mt-2 font-semibold text-black dark:text-white">- John Smith, CFO of FinBiz</span>
+            <span className="block mt-2 font-semibold text-black dark:text-white">- Eric Liu, Manager at New Era Mart, Vancouver</span>
           </div>
           <div className="text-center">
             <p className="italic text-gray-700 dark:text-gray-300">
-              &quot;Their global reach and fraud prevention tools make UCanPay an essential part of our payment
-              stack.&quot;
+              &quot;As a small business, I needed something fast, affordable, and trusted. UCanPay delivered.&quot;
             </p>
             <span
-              className="block mt-2 font-semibold text-black dark:text-white">- Emily Johnson, COO of RetailHub</span>
+              className="block mt-2 font-semibold text-black dark:text-white">- Cindy Huang, Co-Founder of T-Time Bubble Tea</span>
           </div>
         </div>
       </section>
