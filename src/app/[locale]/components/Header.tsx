@@ -282,7 +282,7 @@ export const Header: FC<Props> = ({ locale }) => {
           <Link lang={locale} href={`/contact`} onClick={() => setDropdownOpen(null)}>
             {t('Contact')}
           </Link>
-          <a href="https://dashboard.ams.ca" target="_blank" rel="noopener noreferrer" onClick={() => setDropdownOpen(null)}>
+          <a href="https://dashboard.ams.ucanpay.ca" target="_blank" rel="noopener noreferrer" onClick={() => setDropdownOpen(null)}>
             {t('Signin')}
           </a>
         </nav>
