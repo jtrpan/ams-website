@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl'
 import Button from './components/Button'
+import Image from 'next/image'
 
 export default function DashboardPage() {
   const t = useTranslations('')
@@ -21,6 +22,13 @@ export default function DashboardPage() {
             'Home_Tagline'
           )}
         </div>
+        <Image
+          src="/images/pos10.webp"
+          alt="POS Terminal"
+          width={500}
+          height={400}
+          // className="my-8 rounded-lg shadow-lg"
+        />
         <div className="mt-4 flex flex-row gap-4">
           <a href="/en/contact" target="_blank">
             <Button rounded size="large">
@@ -38,7 +46,17 @@ export default function DashboardPage() {
       {/* Paragraph Section */}
       <section className="bg-selected py-20 max-lg:py-10">
         <div className="mx-auto max-w-screen-lg text-center">
-          <h2 className="text-4xl font-bold mb-8 text-black dark:text-white">{t('Powering_the_future_of_payments')}</h2>
+          <h2 className="text-4xl font-bold mb-2 text-black dark:text-white">{t('Powering_the_future_of_payments')}</h2>
+          <div className="flex justify-center py-8">
+            <Image
+              src="/images/future2.webp"
+              alt="Future"
+              width={900}
+              height={400}
+              className="rounded-xl"
+            />
+          </div>
+
           <p className="text-xl mb-10 text-gray-700 dark:text-gray-300">
             {t(
               'At_UCanPay_we_empower'
@@ -50,7 +68,7 @@ export default function DashboardPage() {
       {/* Key Features Section */}
       <section className="bg-background-secondary py-20 max-lg:py-10">
         <div className="mx-auto max-w-screen-lg text-center">
-          <h2 className="text-4xl font-bold mb-8 text-black dark:text-white">{t('Features')}</h2>
+          <h2 className="text-4xl font-bold mb-2 text-black dark:text-white">{t('Features')}</h2>
         </div>
         <div
           className="mx-auto grid max-w-screen-lg grid-cols-3 gap-14 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-10">
@@ -85,11 +103,20 @@ export default function DashboardPage() {
       <section className="py-20 bg-gray-100 dark:bg-gray-900">
         <div className="mx-auto max-w-screen-lg text-center">
           <h2 className="text-4xl font-bold mb-8 text-black dark:text-white">{t('Why_Choose_UCanPay')}</h2>
-          <p className="text-xl mb-10 text-gray-700 dark:text-gray-300">
+          <p className="text-xl mb-2 text-gray-700 dark:text-gray-300">
             {t(
               'UCanPay_designed_to_accelerate_growth'
             )}
           </p>
+          <div className="flex justify-center py-8">
+            <Image
+              src="/images/office1.webp"
+              alt="Office"
+              width={800}
+              height={400}
+              className="rounded-xl"
+            />
+          </div>
           <div className="flex flex-row gap-6 justify-center">
             <a href="/en/solutions/merchant-solutions" target="_blank">
               <Button rounded size="large" variant="primary">

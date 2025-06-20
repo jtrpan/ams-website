@@ -24,11 +24,11 @@ const space_grotesk = Space_Grotesk({
   variable: '--font-space-grotesk'
 })
 export const metadata: Metadata = {
-  title: 'UCanPay AMS - Seamless Payments for Global Success',
-  description: 'UCanPay AMS provides a seamless and secure payment platform to fuel your global business.',
+  title: 'Antario Merchant Services',
+  description: 'Antario Merchant Services (AMS) provides a seamless and secure payment platform to fuel your global business.',
   keywords: 'payments, global payments, secure payments, UCanPay, AMS, payment gateway',
   openGraph: {
-    title: 'UCanPay AMS',
+    title: 'Antario Merchant Services (AMS)',
     description: 'Fuel your business with seamless global payments.',
     url: 'https://ams.ucanpay.ca/en',
     type: 'website'

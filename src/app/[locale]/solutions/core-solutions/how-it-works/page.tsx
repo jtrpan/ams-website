@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image'
 
 export default function HowItWorks() {
   const t = useTranslations('how_it_works'); // Use 'how_it_works' as the namespace
@@ -9,18 +10,38 @@ export default function HowItWorks() {
       <h1 className="text-5xl lg:text-7xl font-extrabold leading-tight mb-12 text-primary">
         {t('title')}
       </h1>
-      <p className="text-lg lg:text-xl mb-16 text-text-secondary px-4 lg:px-16">
+      <p className="text-lg lg:text-xl mb-2 text-text-secondary px-4 lg:px-16">
         {t('intro')}
       </p>
+
+
+      <div className="flex justify-center py-8 mb-6">
+        <Image
+          src="/images/card7.webp"
+          alt="Card"
+          width={1000}
+          height={400}
+          className="rounded-xl"
+        />
+      </div>
 
       {/* Step 1: Getting Started */}
       <div className="mb-24 bg-background-secondary p-8 rounded-lg shadow-md">
         <h2 className="text-4xl lg:text-5xl font-bold mb-8 text-primary">
           {t('getting_started_title')}
         </h2>
-        <p className="text-lg lg:text-xl text-text-secondary mb-8">
+        <p className="text-lg lg:text-xl text-text-secondary mb-2">
           {t('getting_started_desc')}
         </p>
+        <div className="flex justify-center py-8 mb-6">
+          <Image
+            src="/images/cafe1.webp"
+            alt="Cafe"
+            width={900}
+            height={400}
+            className="rounded-xl"
+          />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           <div className="p-6 bg-background rounded-lg shadow-lg">
             <h3 className="text-3xl font-semibold mb-4">{t('account_setup_title')}</h3>
@@ -36,10 +57,18 @@ export default function HowItWorks() {
       {/* Step 2: Seamless Transactions */}
       <div className="mb-24">
         <h2 className="text-4xl lg:text-5xl font-bold mb-8">{t('transactions_title')}</h2>
-        <p className="text-lg lg:text-xl text-text-secondary mb-16 px-4 lg:px-16">
+        <p className="text-lg lg:text-xl text-text-secondary mb-2 px-4 lg:px-16">
           {t('transactions_desc')}
         </p>
-
+        <div className="flex justify-center py-8 mb-6">
+          <Image
+            src="/images/phone1.webp"
+            alt="Phone"
+            width={850}
+            height={400}
+            className="rounded-xl"
+          />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-6 bg-background-secondary rounded-lg shadow-lg">
             <h3 className="text-3xl font-semibold mb-4">{t('payment_processing_title')}</h3>
@@ -59,9 +88,18 @@ export default function HowItWorks() {
       {/* Step 3: Managing Growth */}
       <div className="mb-24 bg-background-secondary p-8 rounded-lg shadow-md">
         <h2 className="text-4xl lg:text-5xl font-bold mb-8">{t('growth_title')}</h2>
-        <p className="text-lg lg:text-xl text-text-secondary mb-16">
+        <p className="text-lg lg:text-xl text-text-secondary mb-2">
           {t('growth_desc')}
         </p>
+        <div className="flex justify-center py-8 mb-6">
+          <Image
+            src="/images/retail4.webp"
+            alt="Retail"
+            width={900}
+            height={400}
+            className="rounded-xl"
+          />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="p-6 bg-background rounded-lg shadow-lg">
             <h3 className="text-3xl font-semibold mb-4">{t('scalability_title')}</h3>
@@ -83,9 +121,19 @@ export default function HowItWorks() {
         <h2 className="text-4xl lg:text-5xl font-bold mb-12 text-primary">
           {t('why_title')}
         </h2>
-        <p className="text-lg lg:text-xl text-text-secondary mb-12 px-4 lg:px-16">
+        <p className="text-lg lg:text-xl text-text-secondary mb-2 px-4 lg:px-16">
           {t('why_desc')}
         </p>
+
+        <div className="flex justify-center py-8 mb-6">
+          <Image
+            src="/images/data2.webp"
+            alt="Data"
+            width={900}
+            height={400}
+            className="rounded-xl"
+          />
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           <div className="p-6 bg-background-secondary rounded-lg shadow-lg">

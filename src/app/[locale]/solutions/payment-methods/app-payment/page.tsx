@@ -1,25 +1,42 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image'
 
 export default function App_Payment() {
   const t = useTranslations('app_payment');
 
   return (
-    <div className="px-10 lg:px-32 py-24 space-y-24">
-      {/* Hero */}
-      <section className="text-center">
-        <h1 className="text-5xl lg:text-7xl font-extrabold mb-8 text-primary">
-          {t('title')}
-        </h1>
-        <p className="text-lg lg:text-xl text-text-secondary max-w-3xl mx-auto">
-          {t('intro')}
-        </p>
-      </section>
+    <div className="px-10 lg:px-32 py-24 text-center">
+      {/* Main Heading */}
+      <h1 className="text-5xl lg:text-7xl font-extrabold leading-tight mb-12 text-primary">
+        {t('title')}
+      </h1>
+      <p className="text-lg lg:text-xl mb-2 text-text-secondary px-4 lg:px-16">
+        {t('intro')}
+      </p>
+      <div className="flex justify-center py-8 mb-6">
+        <Image
+          src="/images/phone4.webp"
+          alt="Phone"
+          width={1400}
+          height={400}
+          className="rounded-xl"
+        />
+      </div>
 
       {/* Seamless Experience */}
-      <section className="bg-background-secondary p-10 rounded-lg shadow space-y-12">
+      <div className="mb-24 bg-background-secondary p-8 rounded-lg shadow-md">
         <div className="text-center">
           <h2 className="text-4xl font-bold text-primary mb-4">{t('seamless_experience_title')}</h2>
           <p className="text-lg text-text-secondary max-w-3xl mx-auto">{t('seamless_experience_desc')}</p>
+        </div>
+        <div className="flex justify-center py-8 mb-6">
+          <Image
+            src="/images/phone5.webp"
+            alt="Phone"
+            width={900}
+            height={400}
+            className="rounded-xl"
+          />
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-background p-6 rounded-lg shadow">
@@ -31,10 +48,10 @@ export default function App_Payment() {
             <p className="text-text-secondary">{t('cross_channel_desc')}</p>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Connected Commerce */}
-      <section>
+      <div className="mb-24">
         <h2 className="text-4xl font-bold mb-8 text-primary text-center">{t('connected_commerce_title')}</h2>
         <p className="text-lg text-text-secondary mb-12 text-center max-w-4xl mx-auto">
           {t('connected_commerce_desc')}
@@ -47,13 +64,22 @@ export default function App_Payment() {
             </div>
           ))}
         </div>
-      </section>
+      </div>
 
       {/* Developer Features */}
-      <section className="bg-background-secondary p-10 rounded-lg shadow space-y-10">
+      <div className="mb-24 bg-background-secondary p-8 rounded-lg shadow-md">
         <div className="text-center">
           <h2 className="text-4xl font-bold text-primary mb-4">{t('dev_title')}</h2>
           <p className="text-lg text-text-secondary max-w-3xl mx-auto">{t('dev_desc')}</p>
+          <div className="flex justify-center py-8 mb-6">
+            <Image
+              src="/images/computer3.webp"
+              alt="Computer"
+              width={900}
+              height={400}
+              className="rounded-xl"
+            />
+          </div>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           {['sdk', 'api', 'testing', 'support'].map((k) => (
@@ -63,13 +89,22 @@ export default function App_Payment() {
             </div>
           ))}
         </div>
-      </section>
+      </div>
 
       {/* Analytics */}
-      <section className="bg-background-secondary p-10 rounded-lg shadow space-y-12">
+      <div className="mb-24 bg-background-secondary p-8 rounded-lg shadow-md">
         <div className="text-center">
           <h2 className="text-4xl font-bold text-primary mb-4">{t('analytics_title')}</h2>
           <p className="text-lg text-text-secondary max-w-3xl mx-auto">{t('analytics_desc')}</p>
+          <div className="flex justify-center py-8 mb-6">
+            <Image
+              src="/images/office3.webp"
+              alt="Office"
+              width={900}
+              height={400}
+              className="rounded-xl"
+            />
+          </div>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           {['insights', 'customer_data'].map((k) => (
@@ -79,10 +114,10 @@ export default function App_Payment() {
             </div>
           ))}
         </div>
-      </section>
+      </div>
 
       {/* Why UCanPay */}
-      <section>
+      <div className="mb-24">
         <h2 className="text-4xl font-bold mb-8 text-primary text-center">{t('why_title')}</h2>
         <p className="text-lg text-text-secondary mb-12 text-center max-w-3xl mx-auto">{t('why_desc')}</p>
         <div className="grid md:grid-cols-2 gap-8">
@@ -93,16 +128,25 @@ export default function App_Payment() {
             </div>
           ))}
         </div>
-      </section>
+      </div>
 
       {/* Call to Action */}
-      <section className="bg-background-secondary p-10 rounded-lg shadow text-center">
+      <div className="mb-24 bg-background-secondary p-8 rounded-lg shadow-md">
         <h2 className="text-3xl lg:text-4xl font-bold mb-4">{t('cta_title')}</h2>
+        <div className="flex justify-center py-8 mb-6">
+          <Image
+            src="/images/phone1.webp"
+            alt="Phone"
+            width={900}
+            height={400}
+            className="rounded-xl"
+          />
+        </div>
         <p className="text-lg text-text-secondary mb-6">{t('cta_desc')}</p>
         {/*<button className="px-8 py-4 bg-primary text-white rounded-lg hover:bg-opacity-90 transition">*/}
         {/*  {t('cta_button')}*/}
         {/*</button>*/}
-      </section>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image'
 
 export default function MerchantSolutions() {
   const t = useTranslations('merchant_solutions'); // Use 'merchant_solutions' as the namespace
@@ -86,7 +87,7 @@ export default function MerchantSolutions() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          <div className="p-6 bg-background-secondary rounded-lg shadow-lg">
+          <div className="p-62 bg-background-secondary rounded-lg shadow-lg">
             <h3 className="text-3xl font-semibold mb-4">{t('dedicated_support_title')}</h3>
             <p className="text-lg text-text-secondary">{t('dedicated_support_desc')}</p>
           </div>

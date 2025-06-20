@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image'
 
 export default function Careers() {
   const t = useTranslations('careers');
@@ -8,10 +9,18 @@ export default function Careers() {
       <h1 className="text-5xl lg:text-7xl font-extrabold leading-tight mb-12 text-primary text-center">
         {t('title')}
       </h1>
-      <p className="text-lg lg:text-xl text-text-secondary text-center mb-16">
+      <p className="text-lg lg:text-xl text-text-secondary text-center mb-2">
         {t('intro')}
       </p>
-
+      <div className="flex justify-center py-8 mb-6">
+        <Image
+          src="/images/conference1.webp"
+          alt="Conference"
+          width={900}
+          height={400}
+          className="rounded-xl"
+        />
+      </div>
       {/* Why Work With Us */}
       <div className="mb-24">
         <h2 className="text-4xl font-bold mb-8 text-primary text-center">{t('why_title')}</h2>

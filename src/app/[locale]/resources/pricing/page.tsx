@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image'
 
 export default function Pricing() {
   const t = useTranslations('pricing');
@@ -8,12 +9,22 @@ export default function Pricing() {
       <h1 className="text-5xl lg:text-7xl font-extrabold leading-tight mb-12 text-primary text-center">
         {t('title')}
       </h1>
-      <p className="text-lg lg:text-xl text-text-secondary text-center mb-16">
+      <p className="text-lg lg:text-xl text-text-secondary text-center mb-2">
         {t('intro')}
       </p>
 
+      <div className="flex justify-center py-8 mb-6">
+        <Image
+          src="/images/price1.webp"
+          alt="Price"
+          width={1000}
+          height={400}
+          className="rounded-xl"
+        />
+      </div>
+
       {/* Pricing Tiers */}
-      <div className="mb-24">
+      <div className="mb-6">
         <h2 className="text-4xl font-bold mb-8 text-primary text-center">{t('pricing_comparison_title')}</h2>
         <p className="text-lg text-text-secondary text-center mb-12">{t('pricing_comparison_desc')}</p>
 
@@ -58,6 +69,16 @@ export default function Pricing() {
             </ul>
           </div>
         </div>
+      </div>
+
+      <div className="flex justify-center py-8 mb-6">
+        <Image
+          src="/images/computer5.webp"
+          alt="Computer"
+          width={9000}
+          height={400}
+          className="rounded-xl"
+        />
       </div>
 
 
@@ -126,7 +147,16 @@ export default function Pricing() {
       {/* Additional Fees */}
       <div className="mb-24">
         <h2 className="text-4xl font-bold mb-8 text-primary text-center">{t('additional_fees_title')}</h2>
-        <p className="text-lg text-text-secondary text-center mb-12">{t('additional_fees_desc')}</p>
+        <p className="text-lg text-text-secondary text-center mb-2">{t('additional_fees_desc')}</p>
+        <div className="flex justify-center py-8 mb-6">
+          <Image
+            src="/images/ecommerce3.webp"
+            alt="ECommerce"
+            width={900}
+            height={400}
+            className="rounded-xl"
+          />
+        </div>
 
         <ul className="list-disc pl-6">
           <li>{t('additional_fee1')}</li>
@@ -140,7 +170,16 @@ export default function Pricing() {
       {/* Why Choose Us */}
       <div className="mb-24">
         <h2 className="text-4xl font-bold mb-8 text-primary text-center">{t('why_choose_us_title')}</h2>
-        <p className="text-lg text-text-secondary text-center mb-12">{t('why_choose_us_desc')}</p>
+        <p className="text-lg text-text-secondary text-center mb-2">{t('why_choose_us_desc')}</p>
+        <div className="flex justify-center py-8 mb-6">
+          <Image
+            src="/images/price3.webp"
+            alt="Price"
+            width={1050}
+            height={400}
+            className="rounded-xl"
+          />
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="p-6 bg-background-secondary rounded-lg shadow-lg">

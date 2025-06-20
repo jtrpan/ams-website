@@ -43,7 +43,7 @@ export const Header: FC<Props> = ({ locale }) => {
           <div className="flex items-center h-14 w-14"> {/* Ensure logo is centered */}
             <LogoIcon1 />
           </div>
-          <strong className="mx-2 select-none">UCanPay AMS</strong>
+          <strong className="mx-2 select-none">Antario Merchant Services (AMS)</strong>
         </div>
       </Link>
 

@@ -1,4 +1,4 @@
-name: UCanPay AMS Static Web App CI/CD
+name: Antario Merchant Services (AMS) Static Web App CI/CD
 
 on:
   push:

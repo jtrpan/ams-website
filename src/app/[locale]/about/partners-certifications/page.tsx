@@ -4,7 +4,7 @@ export default function PartnersCertifications() {
     const t = useTranslations('partners'); // Use 'partners' as the namespace
 
     return (
-      <div className="px-10 py-16 text-center">
+      <div className="px-10 lg:px-32 py-24 text-center">
           {/* Main Heading */}
           <h1 className="text-5xl font-bold leading-tight mb-12">{t('title')}</h1>
           <p className="mb-16 text-lg text-text-secondary">{t('desc')}</p>
