@@ -215,6 +215,12 @@ export const Header: FC<Props> = ({ locale }) => {
               <div className="absolute z-20 mt-2 w-48 rounded-md bg-background-secondary shadow-lg">
                 <ul className="py-1">
                   <li>
+                    <Link lang={locale} href={`/resources/pos-terminal`} className="block px-4 py-2 hover:bg-background"
+                          onClick={() => setDropdownOpen(null)}>
+                      {t('POS_Terminal')}
+                    </Link>
+                  </li>
+                  <li>
                     <Link lang={locale} href={`/resources/case-studies`} className="block px-4 py-2 hover:bg-background"
                           onClick={() => setDropdownOpen(null)}>
                       {t('Case_Studies')}

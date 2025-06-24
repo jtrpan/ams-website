@@ -15,7 +15,7 @@ export default function Card_Payment() {
       </p>
       <div className="flex justify-center py-8 mb-2">
         <Image
-          src="/images/card8.webp"
+          src="/images/card4.webp"
           alt="Card"
           width={900}
           height={400}

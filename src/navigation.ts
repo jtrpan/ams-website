@@ -28,6 +28,7 @@ export const pathnames = {
   '/resources/case-studies': '/resources/case-studies', // Hardcoded path for Case Studies
   '/resources/news-media': '/resources/news-media', // Hardcoded path for News & Media
   '/resources/news': '/resources/news', // Hardcoded path for News
+  '/resources/pos-terminal': '/resources/pos-terminal', // Hardcoded path for POS Terminal
   '/support': '/support',
   '/support/help-center': '/support/help-center', // Hardcoded path for Help Center
   '/support/user-agreement': '/support/user-agreement', // Hardcoded path for User Agreement

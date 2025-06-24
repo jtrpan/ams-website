@@ -8,10 +8,10 @@ export default function CaseStudies() {
   return (
     <div className="px-10 lg:px-32 py-24 text-center">
       {/* Main Heading */}
-      <h1 className="text-5xl lg:text-7xl font-extrabold leading-tight mb-12 text-primary">
+      <h1 className="text-5xl font-bold leading-tight mb-12">
         {t('title')}
       </h1>
-      <p className="text-lg lg:text-xl mb-16 text-text-secondary px-4 lg:px-16">
+      <p className="mb-2 text-lg text-text-secondary">
         {t('description')}
       </p>
 

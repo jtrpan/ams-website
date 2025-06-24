@@ -23,11 +23,11 @@ export default function DashboardPage() {
           )}
         </div>
         <Image
-          src="/images/pos10.webp"
+          src="/images/card8.webp"
           alt="POS Terminal"
-          width={500}
+          width={900}
           height={400}
-          // className="my-8 rounded-lg shadow-lg"
+          className="my-8 rounded-lg shadow-lg"
         />
         <div className="mt-4 flex flex-row gap-4">
           <a href="/en/contact" target="_blank">
