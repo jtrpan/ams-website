@@ -37,7 +37,7 @@ export const Header: FC<Props> = ({ locale }) => {
   }, [])
 
   return (
-    <div className="mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5">
+    <div className="sticky top-0 z-50 bg-background/90 backdrop-blur-lg shadow-sm transition-all duration-300 mx-auto flex max-w-screen-2xl items-center justify-between p-5">
       <Link lang={locale} href="/">
         <div className="flex flex-row items-center">
           <div className="flex items-center h-14 w-14"> {/* Ensure logo is centered */}
@@ -47,19 +47,19 @@ export const Header: FC<Props> = ({ locale }) => {
         </div>
       </Link>
 
-      <div className="flex flex-row items-center gap-3">
-        <nav className="mr-10 inline-flex gap-5">
+      <div className="flex items-center gap-6">
+        <nav className="flex items-center gap-4">
 
           {/* About Dropdown */}
           <div className="relative dropdown">
             <button
               onClick={() => toggleDropdown('about')}
-              className="hover:text-primary focus:outline-none"
+              className="hover:text-secondary focus:outline-none"
             >
               {t('About')}
             </button>
             {dropdownOpen === 'about' && (
-              <div className="absolute z-20 mt-2 w-48 rounded-md bg-background-secondary shadow-lg">
+              <div className="absolute z-50 mt-2 min-w-[12rem] rounded-md bg-background-secondary shadow-xl overflow-visible">
                 <ul className="py-1">
                   <li>
                     <Link lang={locale} href={`/about/about-us`} className="block px-4 py-2 hover:bg-background"
@@ -94,12 +94,12 @@ export const Header: FC<Props> = ({ locale }) => {
           <div className="relative dropdown">
             <button
               onClick={() => toggleDropdown('solutions')}
-              className="hover:text-primary focus:outline-none"
+              className="hover:text-secondary focus:outline-none"
             >
               {t('Solutions')}
             </button>
             {dropdownOpen === 'solutions' && (
-              <div className="absolute z-20 mt-2 w-48 rounded-md bg-background-secondary shadow-lg">
+              <div className="absolute z-50 mt-2 min-w-[12rem] rounded-md bg-background-secondary shadow-xl overflow-visible">
                 <ul className="py-1">
 
                   {/* Core Solutions */}
@@ -207,12 +207,12 @@ export const Header: FC<Props> = ({ locale }) => {
           <div className="relative dropdown">
             <button
               onClick={() => toggleDropdown('resources')}
-              className="hover:text-primary focus:outline-none"
+              className="hover:text-secondary focus:outline-none"
             >
               {t('Resources')}
             </button>
             {dropdownOpen === 'resources' && (
-              <div className="absolute z-20 mt-2 w-48 rounded-md bg-background-secondary shadow-lg">
+              <div className="absolute z-50 mt-2 min-w-[12rem] rounded-md bg-background-secondary shadow-xl overflow-visible">
                 <ul className="py-1">
                   <li>
                     <Link lang={locale} href={`/resources/pos-terminal`} className="block px-4 py-2 hover:bg-background"
@@ -247,12 +247,12 @@ export const Header: FC<Props> = ({ locale }) => {
           <div className="relative dropdown">
             <button
               onClick={() => toggleDropdown('support')}
-              className="hover:text-primary focus:outline-none"
+              className="hover:text-secondary focus:outline-none"
             >
               {t('Support')}
             </button>
             {dropdownOpen === 'support' && (
-              <div className="absolute z-20 mt-2 w-48 rounded-md bg-background-secondary shadow-lg">
+              <div className="absolute z-50 mt-2 min-w-[12rem] rounded-md bg-background-secondary shadow-xl overflow-visible">
                 <ul className="py-1">
                   <li>
                     <Link lang={locale} href={`/support/help-center`} className="block px-4 py-2 hover:bg-background"
@@ -282,18 +282,20 @@ export const Header: FC<Props> = ({ locale }) => {
               </div>
             )}
           </div>
-          <Link lang={locale} href={`/resources/pricing`} onClick={() => setDropdownOpen(null)}>
+          <Link lang={locale} href={`/resources/pricing`} onClick={() => setDropdownOpen(null)} className="hover:text-secondary focus:outline-none">
             {t('Pricing')}
           </Link>
-          <Link lang={locale} href={`/contact`} onClick={() => setDropdownOpen(null)}>
+          <Link lang={locale} href={`/contact`} onClick={() => setDropdownOpen(null)} className="hover:text-secondary focus:outline-none">
             {t('Contact')}
           </Link>
-          <a href="https://dashboard.ams.ucanpay.ca" target="_blank" rel="noopener noreferrer" onClick={() => setDropdownOpen(null)}>
+          <a href="https://dashboard.ams.ucanpay.ca" target="_blank" rel="noopener noreferrer" onClick={() => setDropdownOpen(null)} className="hover:text-secondary focus:outline-none">
             {t('Signin')}
           </a>
         </nav>
-        <ThemeSwitch />
-        <LangSwitcher />
+        <div className="flex items-center gap-3">
+          <ThemeSwitch />
+          <LangSwitcher />
+        </div>
       </div>
     </div>
   )

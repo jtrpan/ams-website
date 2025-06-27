@@ -33,7 +33,8 @@
     --selected: #324e70;
     --logo-shadow: #0a2e36;
     --logo-body: #097fa5;
-    --span-bg: linear-gradient(to right, #8c00ff, #0fb4e1, #a1d930, #ae0000);
+    /*--span-bg: linear-gradient(to right, #8c00ff, #0fb4e1, #a1d930, #ae0000);*/
+    --span-bg: linear-gradient(to right, #6a00f4, #007bff, #00c9a7, #60d394);
   }
   .sunset {
     --primary: #ff6b6b;

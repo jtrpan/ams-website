@@ -8,8 +8,8 @@ export default function DashboardPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center py-24 bg-cover bg-center">
-        <h1 className="text-center text-7xl font-extrabold leading-tight">
+      <section className="flex flex-col items-center justify-center py-12 sm:py-20 md:py-24 px-4 text-center">
+        <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold leading-tight">
           {t('UCanPay')}{' '}
           <span className="bg-span-bg bg-clip-text text-transparent">
             {t('AMS_Project')}
