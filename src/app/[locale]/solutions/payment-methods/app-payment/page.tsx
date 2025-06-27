@@ -116,7 +116,7 @@ export default function App_Payment() {
         </div>
       </div>
 
-      {/* Why UCanPay */}
+      {/* Why AMS */}
       <div className="mb-24">
         <h2 className="text-4xl font-bold mb-8 text-primary text-center">{t('why_title')}</h2>
         <p className="text-lg text-text-secondary mb-12 text-center max-w-3xl mx-auto">{t('why_desc')}</p>

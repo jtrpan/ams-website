@@ -116,7 +116,7 @@ export default function HowItWorks() {
         </div>
       </div>
 
-      {/* Why Choose UCanPay */}
+      {/* Why Choose AMS */}
       <div className="mb-24">
         <h2 className="text-4xl lg:text-5xl font-bold mb-12 text-primary">
           {t('why_title')}

@@ -40,12 +40,12 @@ const ContactForm = () => {
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
       <div className="space-y-6 bg-background-secondary p-8 rounded-lg shadow-lg">
-        <h3 className="text-xl font-semibold text-text-secondary mb-4">{t('submit_ticket')}</h3>
+        <h3 className="text-3xl font-semibold text-text-secondary mb-4">{t('submit_ticket')}</h3>
 
         <div className="flex flex-wrap -mx-2">
           <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
             <label htmlFor="from_name"
-                   className="block text-sm font-medium text-text-secondary mb-2">{t('name')}</label>
+                   className="block text-sm font-medium text-text-secondary mb-1">{t('name')}</label>
             <input
               type="text"
               id="from_name"
@@ -57,7 +57,7 @@ const ContactForm = () => {
 
           <div className="w-full md:w-1/2 px-2">
             <label htmlFor="from_addr"
-                   className="block text-sm font-medium text-text-secondary mb-2">{t('email')}</label>
+                   className="block text-sm font-medium text-text-secondary mb-1">{t('email')}</label>
             <input
               type="email"
               id="from_addr"
@@ -69,7 +69,7 @@ const ContactForm = () => {
         </div>
 
         <div className="flex flex-col">
-          <label htmlFor="message" className="block text-sm font-medium text-text-secondary mb-2">{t('message')}</label>
+          <label htmlFor="message" className="block text-sm font-medium text-text-secondary mb-1">{t('message')}</label>
           <textarea
             id="message"
             name="message"

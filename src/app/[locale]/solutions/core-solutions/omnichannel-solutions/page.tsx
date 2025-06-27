@@ -17,7 +17,7 @@ export default function OmnichannelSolutions() {
       <div className="flex justify-center py-8 mb-12">
         <Image
           src="/images/retail2.webp"
-          alt="UCanPay Dashboard"
+          alt="Dashboard"
           width={1000}
           height={400}
           className="rounded-xl"
@@ -112,7 +112,7 @@ export default function OmnichannelSolutions() {
         </div>
       </div>
 
-      {/* Section 4: Why Choose UCanPay Omnichannel Solutions? */}
+      {/* Section 4: Why Choose AMS Omnichannel Solutions? */}
       <div className="mb-24">
         <h2 className="text-4xl lg:text-5xl font-bold mb-12 text-primary">
           {t('why_title')}

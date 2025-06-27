@@ -9,25 +9,25 @@ export default function DashboardPage() {
     <div>
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center py-12 sm:py-20 md:py-24 px-4 text-center">
-        <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold leading-tight">
-          {t('UCanPay')}{' '}
+        <h1 className="text-6xl sm:text-5xl md:text-7xl font-extrabold leading-tight">
+          {t('AMS')}{' '}
           <span className="bg-span-bg bg-clip-text text-transparent">
             {t('AMS_Project')}
           </span>
           <br />
-          {t('Home_Title')}
+          <span className="text-2xl sm:text-5xl md:text-7xl font-extrabold leading-tight">
+            {t('Home_Title')}
+          </span>
         </h1>
-        <div className="my-6 px-20 text-center text-2xl text-text-secondary">
-          {t(
-            'Home_Tagline'
-          )}
+        <div className="my-6 text-l sm:text-2xl md:text-2xl lg:text-2xl px-4 sm:px-20 text-text-secondary">
+          {t('Home_Tagline')}
         </div>
         <Image
           src="/images/card8.webp"
           alt="POS Terminal"
           width={900}
           height={400}
-          className="my-8 rounded-lg shadow-lg"
+          className="my-8 w-full max-w-4xl rounded-lg shadow-lg"
         />
         <div className="mt-4 flex flex-row gap-4">
           <a href="/en/contact" target="_blank">
@@ -44,7 +44,7 @@ export default function DashboardPage() {
       </section>
 
       {/* Paragraph Section */}
-      <section className="bg-selected py-20 max-lg:py-10">
+      <section className="bg-selected py-20 max-md:py-10 px-4">
         <div className="mx-auto max-w-screen-lg text-center">
           <h2 className="text-4xl font-bold mb-2 text-black dark:text-white">{t('Powering_the_future_of_payments')}</h2>
           <div className="flex justify-center py-8">
@@ -53,14 +53,11 @@ export default function DashboardPage() {
               alt="Future"
               width={900}
               height={400}
-              className="rounded-xl"
+              className="w-full max-w-[900px] h-auto rounded-xl"
             />
           </div>
-
           <p className="text-xl mb-10 text-gray-700 dark:text-gray-300">
-            {t(
-              'At_UCanPay_we_empower'
-            )}
+            {t('At_AMS_we_empower')}
           </p>
         </div>
       </section>
@@ -99,13 +96,13 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      {/* Why UCanPay Section */}
-      <section className="py-20 bg-gray-100 dark:bg-gray-900">
+      {/* Why AMS Section */}
+      <section className="py-20 max-md:py-10 px-4 bg-gray-100 dark:bg-gray-900">
         <div className="mx-auto max-w-screen-lg text-center">
-          <h2 className="text-4xl font-bold mb-8 text-black dark:text-white">{t('Why_Choose_UCanPay')}</h2>
+          <h2 className="text-4xl font-bold mb-8 text-black dark:text-white">{t('Why_Choose_AMS')}</h2>
           <p className="text-xl mb-2 text-gray-700 dark:text-gray-300">
             {t(
-              'UCanPay_designed_to_accelerate_growth'
+              'AMS_designed_to_accelerate_growth'
             )}
           </p>
           <div className="flex justify-center py-8">
@@ -114,10 +111,10 @@ export default function DashboardPage() {
               alt="Office"
               width={800}
               height={400}
-              className="rounded-xl"
+              className="w-full max-w-[900px] h-auto rounded-xl"
             />
           </div>
-          <div className="flex flex-row gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
             <a href="/en/solutions/merchant-solutions" target="_blank">
               <Button rounded size="large" variant="primary">
                 {t('Explore_Our_Solutions')}
@@ -141,21 +138,21 @@ export default function DashboardPage() {
           className="mx-auto grid max-w-screen-lg grid-cols-3 gap-7 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-10">
           <div className="text-center">
             <p className="italic text-gray-700 dark:text-gray-300">
-              &quot;UCanPay made it simple to accept WeChat Pay and Alipay. It’s been a game changer for our Chinese
+              &quot;AMS made it simple to accept WeChat Pay and Alipay. It’s been a game changer for our Chinese
               customers.&quot;
             </p>
             <span className="block mt-2 font-semibold text-black dark:text-white">- Michelle Zhang, Owner of Golden Lotus Restaurant, Toronto</span>
           </div>
           <div className="text-center">
             <p className="italic text-gray-700 dark:text-gray-300">
-              &quot;Switching to UCanPay reduced our settlement time and helped cut down processing fees by over
+              &quot;Switching to AMS reduced our settlement time and helped cut down processing fees by over
               20%&quot;
             </p>
             <span className="block mt-2 font-semibold text-black dark:text-white">- Eric Liu, Manager at New Era Mart, Vancouver</span>
           </div>
           <div className="text-center">
             <p className="italic text-gray-700 dark:text-gray-300">
-              &quot;As a small business, I needed something fast, affordable, and trusted. UCanPay delivered.&quot;
+              &quot;As a small business, I needed something fast, affordable, and trusted. AMS delivered.&quot;
             </p>
             <span
               className="block mt-2 font-semibold text-black dark:text-white">- Cindy Huang, Co-Founder of T-Time Bubble Tea</span>
@@ -165,10 +162,10 @@ export default function DashboardPage() {
 
 
       {/* Call to Action Section */}
-      <section className="bg-blue-500 text-white py-20">
+      <section className="py-20 max-md:py-10 px-4 bg-blue-500 text-white py-20">
         <h2 className="text-center text-4xl font-bold mb-6">{t('Ready_to_Turbocharge_Your_Payments')}</h2>
         <p className="text-center text-xl mb-10">
-          {t('Get_started_with_UCanPay_today')}
+          {t('Get_started_with_AMS_today')}
         </p>
         <div className="flex justify-center">
           <a href="/en/contact" target="_blank">

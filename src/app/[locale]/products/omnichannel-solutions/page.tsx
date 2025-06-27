@@ -74,7 +74,7 @@ export default function OmnichannelSolutions() {
         </div>
       </div>
 
-      {/* Section 4: Why Choose UCanPay Omnichannel Solutions? */}
+      {/* Section 4: Why Choose AMS Omnichannel Solutions? */}
       <div className="mb-24">
         <h2 className="text-4xl lg:text-5xl font-bold mb-12 text-primary">
           {t('why_title')}

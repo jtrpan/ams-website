@@ -88,60 +88,68 @@ export default function Pricing() {
           {t('competitive_pricing_table_title')}
         </h2>
 
-        <table className="w-full table-auto bg-background-secondary rounded-lg shadow-lg">
-          <thead>
-          <tr>
-            <th className="px-4 py-2">{t('column_provider')}</th>
-            <th className="px-4 py-2">{t('column_interchange_rate')}</th>
-            <th className="px-4 py-2">{t('column_monthly_fee')}</th>
-            <th className="px-4 py-2">{t('column_pci_compliance')}</th>
-            <th className="px-4 py-2">{t('column_chargeback_fee')}</th>
-            <th className="px-4 py-2">{t('column_settlement_time')}</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr className="border-t">
-            <td className="px-4 py-2">{t('table_row1_provider')}</td>
-            <td className="px-4 py-2">{t('table_row1_interchange_rate')}</td>
-            <td className="px-4 py-2">{t('table_row1_monthly_fee')}</td>
-            <td className="px-4 py-2">{t('table_row1_pci_compliance')}</td>
-            <td className="px-4 py-2">{t('table_row1_chargeback_fee')}</td>
-            <td className="px-4 py-2">{t('table_row1_settlement_time')}</td>
-          </tr>
-          <tr className="border-t">
-            <td className="px-4 py-2">{t('table_row2_provider')}</td>
-            <td className="px-4 py-2">{t('table_row2_interchange_rate')}</td>
-            <td className="px-4 py-2">{t('table_row2_monthly_fee')}</td>
-            <td className="px-4 py-2">{t('table_row2_pci_compliance')}</td>
-            <td className="px-4 py-2">{t('table_row2_chargeback_fee')}</td>
-            <td className="px-4 py-2">{t('table_row2_settlement_time')}</td>
-          </tr>
-          <tr className="border-t">
-            <td className="px-4 py-2">{t('table_row3_provider')}</td>
-            <td className="px-4 py-2">{t('table_row3_interchange_rate')}</td>
-            <td className="px-4 py-2">{t('table_row3_monthly_fee')}</td>
-            <td className="px-4 py-2">{t('table_row3_pci_compliance')}</td>
-            <td className="px-4 py-2">{t('table_row3_chargeback_fee')}</td>
-            <td className="px-4 py-2">{t('table_row3_settlement_time')}</td>
-          </tr>
-          <tr className="border-t">
-            <td className="px-4 py-2">{t('table_row4_provider')}</td>
-            <td className="px-4 py-2">{t('table_row4_interchange_rate')}</td>
-            <td className="px-4 py-2">{t('table_row4_monthly_fee')}</td>
-            <td className="px-4 py-2">{t('table_row4_pci_compliance')}</td>
-            <td className="px-4 py-2">{t('table_row4_chargeback_fee')}</td>
-            <td className="px-4 py-2">{t('table_row4_settlement_time')}</td>
-          </tr>
-          <tr className="border-t">
-            <td className="px-4 py-2">{t('table_row5_provider')}</td>
-            <td className="px-4 py-2">{t('table_row5_interchange_rate')}</td>
-            <td className="px-4 py-2">{t('table_row5_monthly_fee')}</td>
-            <td className="px-4 py-2">{t('table_row5_pci_compliance')}</td>
-            <td className="px-4 py-2">{t('table_row5_chargeback_fee')}</td>
-            <td className="px-4 py-2">{t('table_row5_settlement_time')}</td>
-          </tr>
-          </tbody>
-        </table>
+        {/* Desktop table */}
+        <div className="hidden md:block">
+          <table className="w-full table-auto bg-background-secondary rounded-lg shadow-lg">
+            <thead>
+            <tr>
+              <th className="px-4 py-2">{t('column_provider')}</th>
+              <th className="px-4 py-2">{t('column_interchange_rate')}</th>
+              <th className="px-4 py-2">{t('column_monthly_fee')}</th>
+              <th className="px-4 py-2">{t('column_pci_compliance')}</th>
+              <th className="px-4 py-2">{t('column_chargeback_fee')}</th>
+              <th className="px-4 py-2">{t('column_settlement_time')}</th>
+            </tr>
+            </thead>
+            <tbody>
+            {[1, 2, 3, 4, 5].map((i) => (
+              <tr key={i} className="border-t">
+                <td className="px-4 py-2">{t(`table_row${i}_provider`)}</td>
+                <td className="px-4 py-2">{t(`table_row${i}_interchange_rate`)}</td>
+                <td className="px-4 py-2">{t(`table_row${i}_monthly_fee`)}</td>
+                <td className="px-4 py-2">{t(`table_row${i}_pci_compliance`)}</td>
+                <td className="px-4 py-2">{t(`table_row${i}_chargeback_fee`)}</td>
+                <td className="px-4 py-2">{t(`table_row${i}_settlement_time`)}</td>
+              </tr>
+            ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Mobile cards */}
+        <div className="space-y-6 md:hidden">
+          {[1, 2, 3, 4, 5].map((i) => (
+            <div
+              key={i}
+              className="bg-background-secondary rounded-lg shadow-md p-4 space-y-2"
+            >
+              <p>
+                <span className="font-semibold">{t('column_provider')}: </span>
+                {t(`table_row${i}_provider`)}
+              </p>
+              <p>
+                <span className="font-semibold">{t('column_interchange_rate')}: </span>
+                {t(`table_row${i}_interchange_rate`)}
+              </p>
+              <p>
+                <span className="font-semibold">{t('column_monthly_fee')}: </span>
+                {t(`table_row${i}_monthly_fee`)}
+              </p>
+              <p>
+                <span className="font-semibold">{t('column_pci_compliance')}: </span>
+                {t(`table_row${i}_pci_compliance`)}
+              </p>
+              <p>
+                <span className="font-semibold">{t('column_chargeback_fee')}: </span>
+                {t(`table_row${i}_chargeback_fee`)}
+              </p>
+              <p>
+                <span className="font-semibold">{t('column_settlement_time')}: </span>
+                {t(`table_row${i}_settlement_time`)}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Additional Fees */}

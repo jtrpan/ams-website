@@ -74,7 +74,7 @@ export default function IndustriesServed() {
         </div>
       </div>
 
-      {/* Section 4: Why UCanPay? */}
+      {/* Section 4: Why AMS? */}
       <div className="mb-24">
         <h2 className="text-4xl lg:text-5xl font-bold mb-12 text-primary">
           {t('why_title')}

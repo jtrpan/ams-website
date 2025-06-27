@@ -26,7 +26,7 @@ const space_grotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: 'Antario Merchant Services',
   description: 'Antario Merchant Services (AMS) provides a seamless and secure payment platform to fuel your global business.',
-  keywords: 'payments, global payments, secure payments, UCanPay, AMS, payment gateway',
+  keywords: 'payments, global payments, secure payments, AMS, AMS, payment gateway',
   openGraph: {
     title: 'Antario Merchant Services (AMS)',
     description: 'Fuel your business with seamless global payments.',
@@ -49,7 +49,7 @@ export default function RootLayout({
       className={`${space_grotesk.variable} ${rubik.variable} scroll-smooth`}
       suppressHydrationWarning
     >
-    <body>
+    <body className="overflow-x-hidden">
     <ThemeProvider
       enableSystem={true}
       attribute="class"
