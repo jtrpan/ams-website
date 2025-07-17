@@ -4,6 +4,8 @@ import { useTranslations } from 'next-intl'
 import { FC, useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import LogoIcon1 from '../../icons/logo1'
+import LogoNoText from '../../icons/logo_notext'
+import LogoText from '../../icons/logo_text'
 import LangSwitcher from './LangSwitcher'
 import ThemeSwitch from './ThemeSwitch'
 import { CloseButton, Disclosure, useClose } from '@headlessui/react'
@@ -63,7 +65,9 @@ export const Header: FC<Props> = ({ locale }) => {
           <Link lang={locale} href="/">
             <div className="flex flex-row items-center">
               <div className="flex items-center h-10 w-10 sm:h-14 sm:w-14">
-                <LogoIcon1 />
+                {/*<LogoIcon1 />*/}
+                <LogoNoText />
+                {/*<LogoText />*/}
               </div>
               <strong className="mx-2 select-none">
                 <span className="hidden sm:inline">Antario Merchant Services (AMS)</span>
